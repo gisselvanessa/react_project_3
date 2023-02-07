@@ -1,0 +1,84 @@
+.card {
+    background-color: #07262b;;
+    color: aliceblue;
+    /* padding: 2em; */
+    border-radius: 1em;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    overflow: hidden;
+    max-width: 250px;
+    min-height: 500px;
+    
+    
+}
+.card__header{
+    position: relative;
+}
+.card__container-status{
+    display: flex;
+    gap: 0.6em;
+    align-items: center;
+    position: absolute;
+    top: 1.5em;
+    width: 8em;
+    background-color: rgb(38, 48, 61) ;
+    padding: 0.2em 0 0.2em 0.6em;
+    border-radius: 0 0.3em 0.3em 0;
+    font-size: 0.8em;
+    
+}
+.card__circle {
+    display: block;
+    width: 12px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #aaa;
+}
+.card__name {
+    color: rgb(248, 255, 214);
+}
+
+.card__label {
+    color: rgb(179, 179, 179);
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+.card__body{
+    padding: 1em 1.1em;
+}
+.card__name{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.card__list{
+    display: grid;
+    gap: 0.1em;
+}
+.card__hr{
+    
+    border: none;
+    border-top: 1px solid rgb(228, 241, 247);
+
+}
+.unknown{
+    background-color: #aaa;
+}
+.Alive{
+    background-color: rgb(108, 218, 108);
+}
+.Dead{
+    background-color: red;
+}
+.card__item{
+    display: flex;
+    flex-direction: column;
+    
+    text-transform: uppercase;
+    margin-top: 0.6em;
+    
+}

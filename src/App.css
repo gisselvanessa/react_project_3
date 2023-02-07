@@ -1,0 +1,95 @@
+.App{
+  
+  color: beige;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.App__header{
+  height: 250px;
+  /* background-color: rgba(165, 175, 206, 0.201); */
+  background-image: url(../public/rick-y-morty-escapando-de-portal_3840x2160_xtrafondos.com.jpg);
+  width: 100%;
+  padding: 1.5rem;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1em;
+}
+.App__title{
+  text-align: center;
+  color: rgb(248, 246, 246);
+  text-shadow: 2px 2px 3px #000000;
+  font-size: 3rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/* .container{
+  display: grid;
+  grid-template-columns:  repeat(auto-fill,minmax(220px, 1fr));
+  gap: 1.5em;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+} */
+.container{
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer{
+  padding: 2em;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  height: 2em;
+}
+.form__input{
+  width: 100%;
+  max-width: 200px;
+  padding-left: 1em;
+  border-radius: 0.7em 0 0 0.7em;
+}
+.form__btn{
+  width: 100px;
+  /* border-radius: 0 0.5em 0.5em 0; */
+  /* height: 2.8em; */
+  background-color: rgb(48, 196, 82);
+  color: white;
+  /* box-shadow: 1px 2px 5px #000; */
+
+}
+.form__btn:hover{
+  font-weight: 700;
+  filter: brightness(1.1);
+}
+.app__error{
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 400;
+}
+/* .form__ul{
+  display: none;
+} */
+.form__list{
+  cursor: pointer;
+  padding-left: 0.5em;
+}
+.form__list:hover{
+  color: aquamarine;
+  background-color: #00000045;
+  border-radius: 5px;
+}
