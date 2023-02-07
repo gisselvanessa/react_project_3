@@ -75,16 +75,19 @@ function App() {
                 </form>
             </div>
 
-            {
-                isShow &&
+            {isShow && (
                 <ul className="form__ul">
-                {listLocation?.map((loc) => (
-                    <li className="form__list" onClick={()=> handleClickList(loc.id)} key={loc.id}>
-                        {loc.name}
-                    </li>
-                ))}
-            </ul>
-            }
+                    {listLocation?.map((loc) => (
+                        <li
+                            className="form__list"
+                            onClick={() => handleClickList(loc.id)}
+                            key={loc.id}
+                        >
+                            {loc.name}
+                        </li>
+                    ))}
+                </ul>
+            )}
 
             {hasError ? (
                 <h3 className="app__error">
@@ -100,7 +103,7 @@ function App() {
                     </div>
                 </>
             )}
-            <footer className="footer">Code</footer>
+            
         </div>
     );
 }
